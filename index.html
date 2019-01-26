@@ -28,19 +28,21 @@ H1 {
    </style>
   <script>
 function func(){
-var n;
-n=document.getElementById("a_znach").value;
-n=n+1;
-document.getElementById("a").innerHTML ="<h1>"+"Имя мне легион, ибо нас много "+"<br>"+ n+"</h1>";
-n=Number(document.getElementById("a_znach").value);
-n=n+1;
-document.getElementById("a").innerHTML = document.getElementById("a").innerHTML + "<h1>"+"Имя мне легион, ибо нас много "+"<br>"+ n+"</h1>";
+var n=document.getElementById("n_znach").value;
+var v=document.getElementById("v_znach").value;
+var a=n+v
+document.getElementById("a").innerHTML ="<h1>"+"айм эн эдюлт вирджин "+"<br>"+ a+"</h1>";
+v=Number(document.getElementById("n_znach").value);
+n=Number(document.getElementById("v_znach").value);
+a=n+v
+document.getElementById("a").innerHTML = document.getElementById("a").innerHTML + "<h1>"+"айм ан эдюлт вирджин "+"<br>"+ a+"</h1>";
 }
 </script>
   </head>
   <body>
-    <h1>Мы верим, что Карина умная девочка</h1>
-    n=<input type="text" value="0" id="a_znach">
+    <h1>роуд ворк эхэд</h1>
+    n=<input type="text" value="0" id="n_znach">
+     v=<input type="text" value="0" id="v_znach">
 <br>
 <br>
 <button onclick="func()">Нажми меня</button>
