@@ -11,7 +11,6 @@
   background: white;
   font-family: Georgia;
   }
-
 H1 {
   font-size: 30px;
   font-weight: normal;
@@ -41,13 +40,26 @@ var r;
 var h;
 h=Number(document.getElementById("HHH").value);
  var distance = Math.sqrt((6350+h)*(6350+h)-6350*6350);
- document.getElementById("kont_pravoslavie").innerHTML ="<h1>"+"объем"+"<b+"</h1>";
+ document.getElementById("kont_karina").innerHTML ="<h1>"+"Расстояние "+distance+"<br>"+"</h1>";
  }
- var g;
-g=Number(document.getElementById("hhhhh").value);
- var size = 2in*2in*2in;
- document.getElementById("kont_karina").innerHTML ="<h1>"+"РАсстояние до линии горизонта"+"<br>"+ distance+"</h1>";
+ 
+   function zad(){
+var a;
+a=Number(document.getElementById("rebro").value);
+ document.getElementById("kont_pravoslavie").innerHTML ="<h1>"+"площадь боковой поверхности"+"<br>"+a*a+"<br>"+"объем куба"+"<br>"+a*a*a+"</h1>";
+ 
+ 
  }
+ 
+ 
+ function func5 (){
+var C;
+C=Number(document.getElementById("G").value);
+ document.getElementById("k").innerHTML ="<h1>"+" длинна окружности"+"<br>"+C*2*3.14+"<h1>";
+ 
+ }
+
+
  </script>
  </head>
  <body>
@@ -63,14 +75,15 @@ g=Number(document.getElementById("hhhhh").value);
   высота над землей h=<input type="text" value="0" id="HHH">
   <button onclick="zadacha3()">1.27</button>
   <div id="kont_karina"></div>
-
- 
- <h1>Задача 1.28</h1>
-умоляю не ставьте 2 не бейьте пожалуйста=<input type="text" value="0" id="hhhhh">
-  <button onclick="func3()">1.28</button>
-  <div id="b"></div>  высота над землей h=<input type="text" value="0" id="HHH">
-  <button onclick="zadacha4()">1.27</button>
+  <h1>Задача 1.28</h1>
+ ребро куба=<input type="text" value="0" id="rebro">
+  <button onclick="zad()">1.28</button>
   <div id="kont_pravoslavie"></div>
+ 
+ <h1>Задача 1.29</h1>
+ радиус C=<input type="text" value="3" id="G">
+  <button onclick="func5()">1.29</button>
+  <div id="k"></div>
   </body> 
  </html>
  
