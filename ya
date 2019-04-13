@@ -1,0 +1,82 @@
+<html> 
+
+<head> 
+<link rel="stylesheet" href="style.css"> 
+<script> 
+function func1() { 
+var i = 20; 
+while (i < 35) { 
+document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + "<br> "; 
+i++; 
+} 
+} 
+
+function func2() { 
+n = Number(document.getElementById("n_f2_znach").value); 
+var i = 0; 
+do { 
+document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i*i + " "; 
+i++; 
+} while (i < n); 
+} 
+
+function func3() { 
+n = Number(document.getElementById("n_f3_znach").value); 
+var i; 
+for (i = 0; i <= n; i++) { 
+document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i + " "; 
+} 
+} 
+function func4() { 
+  document.getElementById("otvet4").innerHTML ="";
+var a= Number(document.getElementById("a_f4_znach").value); 
+var b= Number (document.getElementById("b_f5_znach").value); 
+for (a = 0;a >=b) { 
+document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + i + "<br> "; 
+i++; 
+} 
+} 
+
+</script> 
+</head> 
+
+<body> 
+
+
+<h1>Цикл while!</h1> n= 
+<input type="text" value="6" id="n_f1_znach"> 
+<a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">♥</a> 
+<div id="otvet1"></div> 
+<br> 
+<br> 
+<br> 
+<br> 
+<h1>Цикл Do while</h1> n= 
+<input type="text" value="6" id="n_f2_znach"> 
+<a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra">♂</a> 
+<div id="otvet2"></div> 
+<br> 
+<br> 
+<br> 
+<br> 
+<h1>Цикл for</h1> a= 
+<input type="text" value="9" id="n_f3_znach"> 
+<a href="#" onclick="func3()" class="button green text-blanco text-shadow-negra">♀</a> 
+<div id="otvet3"></div> 
+<br> 
+<br> 
+<br> 
+<br> 
+<h1>5.3 g</h1>  
+a=<input type="text" value="9" id="a_f4_znach"> 
+b=<input type="text" value="9" id="b_f4_znach"> 
+<a href="#" onclick="func4()" class="button orange text-blanco text-shadow-negra">ya</a> 
+
+<div id="otvet4"></div> 
+<br> 
+<br> 
+<br> 
+<br> 
+
+</body> 
+</html>
