@@ -20,23 +20,47 @@ i++;
 } while (i < n); 
 } 
 
+
+
 function func3() { 
 n = Number(document.getElementById("n_f3_znach").value); 
 var i; 
-for (i = 0; i <= n; i++) { 
+for (i = 0; i < n; i++) { 
 document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i + " "; 
 } 
 } 
 function func4() { 
-  document.getElementById("otvet4").innerHTML ="";
-var a= Number(document.getElementById("a_f4_znach").value); 
-var b= Number (document.getElementById("b_f5_znach").value); 
-for (a = 0;a >=b) { 
+a= Number(document.getElementById("n_f4_znach").value); 
+var a = 0; 
+for (a = 0;a >= b;){
 document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + i + "<br> "; 
-i++; 
+i++;
+}}
+
+function func5() { 
+var a = Number(document.getElementById("a_f5_znach").value); 
+var b = Number(document.getElementById("b_f5_znach").value); 
+var i; 
+var s =0; 
+for (i = a; i <= b; i++) { 
+s=s+i; 
+document.getElementById("otvet5").innerHTML = document.getElementById("otvet5").innerHTML + i + " " + s+ "<br>"; 
+} 
+
+} 
+</script> 
+</head> 
+
+<body> 
+
+
 } 
 } 
 
+</script> 
+</head> 
+
+<body>
 </script> 
 </head> 
 
@@ -60,23 +84,55 @@ i++;
 <br> 
 <br> 
 <h1>Цикл for</h1> a= 
-<input type="text" value="9" id="n_f3_znach"> 
+<input type="text" value="1" id="a_f3_znach"> 
+b= 
+<input type="text" value="10" id="b_f3_znach"> 
 <a href="#" onclick="func3()" class="button green text-blanco text-shadow-negra">♀</a> 
 <div id="otvet3"></div> 
 <br> 
 <br> 
 <br> 
 <br> 
-<h1>5.3 g</h1>  
-a=<input type="text" value="9" id="a_f4_znach"> 
-b=<input type="text" value="9" id="b_f4_znach"> 
+</body> 
+</html>
+ 
+More
+</body> 
+</html>
+ 
+More
+<h1>5.3 g</h1> n= 
+<input type="text" value="9" id="n_f4_znach"> 
 <a href="#" onclick="func4()" class="button orange text-blanco text-shadow-negra">ya</a> 
-
 <div id="otvet4"></div> 
 <br> 
 <br> 
 <br> 
 <br> 
-
 </body> 
 </html>
+<h1>5.27 a= 
+<input type="text" value="1" id="a_f5_znach"> 
+b= 
+<input type="text" value="10" id="b_f5_znach"> 
+<a href="#" onclick="func5()" class="button green text-blanco text-shadow-negra">♀</a> 
+<div id="otvet5"></div> 
+<br> 
+<br> 
+<br> 
+<br> 
+</body> 
+</html>
+ <h1>5.28 a= 
+<input type="text" value="1" id="a_f6_znach"> 
+b= 
+<input type="text" value="10" id="b_f6_znach"> 
+<a href="#" onclick="func6()" class="button blue text-blanco text-shadow-negra">♀</a> 
+<div id="otvet5"></div> 
+<br> 
+<br> 
+<br> 
+<br> 
+</body> 
+</html>
+More
